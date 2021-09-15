@@ -2,3 +2,45 @@
 div, header, footer {
     text-align: center;
 }
+
+#formulario {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    border: 1px black solid;
+    flex-wrap: wrap;
+}
+
+.campo {
+    padding: 10px 10px;
+}
+
+.campo > label {
+    display: block;
+}
+.campo > input {
+    margin-top: 5px;
+    border: 1px gray solid;
+    height: 20px;
+    border-radius: 5px;
+}
+.campo > input:focus {
+    outline: none;
+    box-shadow: 5px 5px 8px aquamarine;
+}
+
+.boton {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.boton > input {
+    width: 100px;
+    height: 30px;
+}
