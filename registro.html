@@ -36,7 +36,9 @@
       </div>
       <div class="campo">
         <label for="email">Correo:</label>
-        <input type="email" name="correo" id="emailCorreo">
+        <input type="email" name="correo" id="campoCorreo"
+        onchange="validar_correo(event.target.value)"
+        >
       </div>
       <div class="campo">
         <label for="email">Confirmar correo:</label>
@@ -57,6 +59,7 @@
   </footer>
 
   <noscript>Your browser don't support JavaScript!</noscript>
-  <script src="./scripts.js"></script>
+  <!-- JS Files Links -->
+  <script type="text/javascript" src="form2.js"></script>
 </body>
 </html>
