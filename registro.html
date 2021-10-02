@@ -49,9 +49,10 @@
         <input type="tel" name="telefono" id="telTelefono">
       </div>
       <div class="boton">
-        <input type="button" name="button" id="button" value="Enviar">
+        <input type="submit" name="button" id="button" value="Enviar">
       </div>
   </form>
+  <button onclick="ordenarRegistros(REGISTROS)">Ordenar</button>
 </div>
 
   <footer>
@@ -59,7 +60,14 @@
   </footer>
 
   <noscript>Your browser don't support JavaScript!</noscript>
+  <script>
+    document.getElementById('form1').addEventListener('submit', (e) => {
+      e.preventDefault();
+      almacenarRegistros();
+    });
+  </script>
   <!-- JS Files Links -->
   <script type="text/javascript" src="form2.js"></script>
+  <script type="text/javascript" src="registro.js"></script>
 </body>
 </html>
