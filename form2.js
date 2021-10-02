@@ -29,8 +29,3 @@ function validar_correo(campoCorreo) {
 
 module.exports.validar_correo = validar_correo;
 module.exports.validar_contrasena_usuario = validar_contrasena_usuario;
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 79eab6de6e661f9ed739217e8f6c15b3aa4edeaa
