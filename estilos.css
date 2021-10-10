@@ -14,6 +14,7 @@ div, header, footer {
     width: 500px;
     border: 1px black solid;
     flex-wrap: wrap;
+     background-color: aqua;
 }
 
 .campo {
