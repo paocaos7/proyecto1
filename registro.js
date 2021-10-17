@@ -1,23 +1,26 @@
-const REGISTROS = [];
+let arreglo = [];
 
 function almacenarRegistros() {
-  const form = document.getElementById('form1');
-  const formElements = form.elements;
-  const item = {};
-  for (let index = 0; index < formElements.length; index++) {
-    const element = formElements.item(index);
-    if (element.type === 'submit') {
-      continue;
-    }
-    item[element.id] = element.value;
-  }
-  REGISTROS.push(item);
-  form.reset();
+  let objeto =
+  {
+    'nombre': document.getElementById('campoNombre').value,
+    'contrasena': document.getElementById('campoContrasena').value,
+    'correo': document.getElementById('campoCorreo').value,
+    'confirmacioncorreo': document.getElementById('campoConfirmacionCorreo').value,
+    'telefono': document.getElementById('campoTelefono').value
+  };
+  console.log(objeto);
+  arreglo.push(objeto);
 }
 
 function ordenarRegistros(params) {
-  return params.sort((a, b) => a.textNombre.localeCompare(b.textNombre));
+  return params.sort(function (a, b) {
+    if (a.nombre < b.nombre) { return -1; }
+    if (a.nombre > b.nombre) { return 1; }
+    return 0;
+  })
 }
 
 module.exports.almacenarRegistros = almacenarRegistros;
 module.exports.ordenarRegistros = ordenarRegistros;
+module.exports.arreglo = arreglo;
